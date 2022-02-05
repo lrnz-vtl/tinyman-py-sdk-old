@@ -3,8 +3,8 @@ from base64 import b64decode
 from algosdk.v2client.algod import AlgodClient
 from algosdk.error import AlgodHTTPError
 from algosdk.encoding import encode_address
-from tinyman.utils import wait_for_confirmation
-from tinyman.assets import Asset, AssetAmount
+from tinyman_old.utils import wait_for_confirmation
+from tinyman_old.assets import Asset, AssetAmount
 from .optin import prepare_app_optin_transactions,prepare_asset_optin_transactions
 from .constants import TESTNET_VALIDATOR_APP_ID, MAINNET_VALIDATOR_APP_ID
 

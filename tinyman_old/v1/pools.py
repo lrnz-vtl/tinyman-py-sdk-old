@@ -4,8 +4,8 @@ from base64 import b64encode, b64decode
 from algosdk.v2client.algod import AlgodClient
 from algosdk.encoding import decode_address
 from .contracts import get_pool_logicsig
-from tinyman.utils import get_state_int, get_state_bytes
-from tinyman.assets import Asset, AssetAmount
+from tinyman_old.utils import get_state_int, get_state_bytes
+from tinyman_old.assets import Asset, AssetAmount
 from .swap import prepare_swap_transactions
 from .bootstrap import prepare_bootstrap_transactions
 from .mint import prepare_mint_transactions
@@ -13,7 +13,7 @@ from .burn import prepare_burn_transactions
 from .redeem import prepare_redeem_transactions
 from .optin import prepare_asset_optin_transactions
 from .client import TinymanClient
-from tinyman.v1 import swap
+from tinyman_old.v1 import swap
 
 
 def get_pool_info(client: AlgodClient, validator_app_id, asset1_id, asset2_id):
